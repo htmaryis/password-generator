@@ -65,7 +65,7 @@ function gerarSenha(){
     const senhaSorteada = [];
     const opcPrimeiroCaractere = document.getElementById("primeiroCaractere").value;;
 
-    if(opcPrimeiroCaractere==0){
+    if(opcPrimeiroCaractere=='aleatorio'){
         for(let i = 0; i< tamanhoSenha; i++){
         sorteado = sorteador[Math.floor(Math.random() * sorteador.length)];
         senhaSorteada.push(sorteado);
